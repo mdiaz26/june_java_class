@@ -1,8 +1,10 @@
 package day4.Products;
 
 public class Inventory {
-    float price;
-    String name;
+    private float price;
+    private String name;
+
+    public Inventory(){}
 
     public Inventory (float price, String name){
         this.price = price;
