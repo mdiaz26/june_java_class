@@ -1,21 +1,24 @@
-package day4.Clothing;
-import day4.Products.Inventory;
+package Clothing;
+import Products.Inventory;
+import Enums.ShirtSize;
 
 public class Shirt extends Inventory {
-    private String size;
+    private ShirtSize size;
     private String color;
 
-    public Shirt(int price, String name, String size, String color) {
+    public Shirt(){}
+
+    public Shirt(float price, String name, ShirtSize size, String color) {
         super(price, name);
         this.size = size;
         this.color = color;
     }
 
-    public String getSize(){
+    public ShirtSize getSize(){
         return this.size;
     }
 
-    public void setSize(String size) {
+    public void setSize(ShirtSize size) {
         this.size = size;
     }
 
@@ -25,6 +28,10 @@ public class Shirt extends Inventory {
 
     public void setColor(String newColor) {
         this.color = newColor;
+    }
+
+    public String clean(){
+        return "I put the shirt in the washing machine";
     }
 
     @Override

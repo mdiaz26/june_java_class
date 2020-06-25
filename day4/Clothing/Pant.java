@@ -1,9 +1,11 @@
-package day4.Clothing;
-import day4.Products.Inventory;
+package Clothing;
+import Products.Inventory;
 
-public class Pant extends Inventory{
+public class Pant extends Inventory {
     private int numOfPockets;
 
+    public Pant(){}
+    
     public Pant(float price, String name, int numOfPockets) {
         super(price, name);
         this.numOfPockets = numOfPockets;
@@ -19,6 +21,10 @@ public class Pant extends Inventory{
 
     public void wash(){
         System.out.println("I took the pants to be washed");
+    }
+
+    public String clean(){
+        return "I took the pants to the dry cleaner";
     }
 
     @Override

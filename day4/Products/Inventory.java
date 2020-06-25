@@ -1,6 +1,6 @@
-package day4.Products;
+package Products;
 
-public class Inventory {
+public abstract class Inventory {
     private float price;
     private String name;
 
@@ -30,6 +30,8 @@ public class Inventory {
     public void setName(String newName){
         this.name = newName;
     }
+
+    public abstract String clean();
     
 
     @Override
